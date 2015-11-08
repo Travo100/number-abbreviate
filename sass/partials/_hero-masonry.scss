@@ -1,0 +1,180 @@
+// @mixin column-width($size) {
+// 	-o-column-width: $size;
+// 	-ms-column-width: $size;
+// 	-moz-column-width: $size;
+// 	-webkit-column-width: $size;
+// 	column-width: $size;
+// }
+
+// @mixin column-gap($size) {
+// 	-o-column-gap: $size;
+// 	-ms-column-gap: $size;
+// 	-moz-column-gap: $size;
+// 	-webkit-column-gap: $size;
+// 	column-gap: $size;
+// }
+
+.hero-masonry{
+	font-family: $museo-regular;
+	.ra-banner {
+		text-align: center;
+		font-family: $museo-light;
+		background: $quinary-blue;
+		color: $primary-white;
+		padding-top: 10rem;
+		padding-bottom: 10rem;
+		h1 {
+			font-size: 2.5rem;
+			line-height: 3.1rem;
+		}
+		h3 {
+			font-size: 1.65rem;
+    		line-height: 2.7rem;
+		}
+	}
+
+	.ra-hero-masonry {
+		font-size: 2rem;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
+		.ra-grid {
+			margin : 0 auto;
+		}
+
+		.ra-item {
+			width: 275px;
+			color: $secondary-gray;
+			padding-bottom: 4.5rem;
+			border-bottom: 2px solid #e5eaed;
+			margin: 0 0 60px;
+			h3 {
+				font-family: $museo-bold;
+				line-height: 3rem;
+				font-size: 2.4rem;
+				margin-bottom: 0.5rem;
+			}
+			h4 {
+				font-family: $museo-light;
+				font-size: 2rem;
+				margin-top: 0;
+				margin-bottom: 3.5rem;
+			}
+			p {
+				font-size: 1.8rem;
+				line-height: 3.6rem;
+			}
+			a {
+				font-size: 1.4rem;
+				font-family: $museo-regular;
+				line-height: 1.8rem;
+				text-transform: uppercase;
+				color: $link-blue;
+				&:hover {
+					text-decoration: none;
+					color: darken($link-blue, 15);
+				}	
+			}
+			img, a {
+				display: block;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.ra-quote {
+				margin-top: 0;
+				margin-bottom: 3.5rem;
+				max-width: 18px;
+			}
+			.ra-social-icon {
+				margin: -30px 0 0 0;
+				padding: 0;
+				float: right;
+				max-width: 40px;
+			}
+			.video-thumb, .thumb {
+				position: relative;
+				margin-bottom: 3.5rem;
+				.video-thumb-play-button {
+					width: 6.5rem;
+					height: 6.5rem;
+					overflow: auto;
+					margin: auto;
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					border: 0;
+				}
+				img {
+					border: 1px solid $tertiary-gray;
+					max-width: 300px;
+					height: 225px;
+				}
+			}
+
+			.video-thumb:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+			
+			  &.ng-enter {
+			    transition: opacity linear 1s;
+			    opacity: 0;
+			  }
+			  
+			  &.ng-enter.ng-enter-active {
+			    opacity: 1;
+			  }
+			  &.ng-enter-stagger {
+			  /* this will have a 100ms delay between each successive enter animation */
+			  
+			  -webkit-transition-delay: 0.2s;
+			  transition-delay: 0.2s;
+			  /* in case the stagger doesn't work then these two values
+			     must be set to 0 to avoid an accidental CSS inheritance */
+			  
+			  -webkit-transition-duration: 0s;
+			  transition-duration: 0s;
+			}
+
+		}
+	}
+	@media (min-width: 480px) {
+		.ra-hero-masonry .ra-item {
+			width: 300px;
+			margin: 0 15px 60px;
+		}
+	}
+	@media (min-width: 768px) {
+		.ra-banner {
+			h1 {
+				font-size: 4.5rem;
+				line-height: 5.8rem;
+			}
+			h3 {
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+		}
+		
+	}
+	@media (min-width: 992px) {
+		.ra-hero-masonry .ra-item {
+			width: 300px;
+			margin: 0 40px 60px;
+		}
+		.ra-banner {
+			h1 {
+				font-size: 5rem;
+				line-height: 6.2rem;
+			}
+			h3 {
+				font-size: 2.4rem;
+				line-height: 3.6rem;
+			}
+		}
+	}
+}

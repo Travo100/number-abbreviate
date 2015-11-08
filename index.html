@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta-charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Masonry Layout</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body ng-app="app">
+<div ng-controller="testController as test">
+  <h1 ng-bind="test.million | numberAbbrev"></h1>
+  <h1 ng-bind="test.tenmillion | numberAbbrev"></h1>
+  <h1 ng-bind="test.hundredmillion | numberAbbrev"></h1>
+
+</div>
+<!-- scripts -->
+<script src="libs/angular.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html> 

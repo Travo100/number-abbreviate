@@ -1,0 +1,972 @@
+/*Theme Name: Inspira
+ *Theme URI: http://inspira.com/
+ *Author: Travis Thompson, Matthew Roelle, Minh Nguyen
+ *Author URI: http://inspira.com/
+ *Description: Theme for Inspira
+ *Version: 1.0 
+ *License: GNU General Public License v2 or later
+ *License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *Tags: frontend framework
+ *
+ *This theme, like WordPress, is licensed under the GPL.
+ *Use it to make something cool, have fun, and share what you've learned with others. 
+ */
+body {
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif; }
+
+.admin-bar .navbar-fixed-top {
+  margin-top: 30px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: normal; }
+
+p, em, cite, li, q, a {
+  color: #333;
+  font-size: 24px;
+  font-weight: 300; }
+
+h5 {
+  font-size: 32px; }
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 120px; }
+
+  h2 {
+    font-size: 100px; }
+
+  h3 {
+    font-size: 72px; }
+
+  h4 {
+    font-size: 60px; }
+
+  h5 {
+    font-size: 48px; }
+
+  h6 {
+    font-size: 36px; } }
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #ff6c00; }
+
+.action-button {
+  border: 2px solid #ff7e00;
+  border-radius: 30px;
+  padding: 11px 0 13px;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+  max-width: 370px;
+  transition: all 0.10s ease-in-out; }
+  .action-button:hover {
+    color: #fff;
+    background: #ff7e00; }
+  .action-button.side {
+    float: left;
+    width: 169px;
+    margin-top: 20px;
+    margin-right: 30px; }
+  .action-button.carousel {
+    max-width: 200px;
+    color: #fff; }
+
+.section-title {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 2em; }
+
+.inspira-logo {
+  color: #ff6c00;
+  text-transform: uppercase;
+  font-size: 24px;
+  height: auto;
+  padding: 0;
+  margin: 0 0 0 15px;
+  font-style: italic;
+  font-weight: 300; }
+  .inspira-logo span {
+    font-weight: 900; }
+  .inspira-logo:hover, .inspira-logo:focus, .inspira-logo:active {
+    color: #ff6c00;
+    text-decoration: none; }
+
+/*NAV STYLES*/
+.navbar-inverse {
+  background: #fff;
+  border-bottom: 1px solid #ff8400;
+  padding: 15px 0;
+  transition: all 0.4s ease-in-out;
+  z-index: 9999999999; }
+  .navbar-inverse .navbar-collapse {
+    border: none; }
+  .navbar-inverse.scroll-bar {
+    background: #fff; }
+  .navbar-inverse .navbar-brand {
+    color: #ff6c00; }
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:active {
+      color: #ff6c00;
+      text-decoration: none; }
+  @media (min-width: 768px) {
+    .navbar-inverse {
+      padding: 25px 0;
+      background: rgba(255, 255, 255, 0.8); } }
+  .navbar-inverse #menu-header > li.active a {
+    background: none;
+    color: #ff6c00; }
+  .navbar-inverse #menu-header > li > a {
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    padding: 10px 15px;
+    text-transform: uppercase; }
+    .navbar-inverse #menu-header > li > a:hover {
+      color: #ff6c00; }
+    @media (min-width: 768px) {
+      .navbar-inverse #menu-header > li > a {
+        padding: 0 15px; } }
+  .navbar-inverse .navbar-toggle {
+    padding: 0;
+    margin-top: 0;
+    border: none; }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+      background: none; }
+    .navbar-inverse .navbar-toggle .icon-bar {
+      background: #ff6c00; }
+
+/******************
+ *HEADER STYLES
+ ******************** */
+@media (min-width: 768px) {
+  .sub-menu {
+    display: none;
+    position: absolute;
+    background: #222222;
+    padding: 10px 15px;
+    width: 200px; }
+
+  li:hover .sub-menu {
+    display: block; } }
+.sub-menu li {
+  margin-bottom: 10px;
+  list-style: none; }
+  .sub-menu li:last-child {
+    margin-bottom: 0; }
+.sub-menu a {
+  color: #999999;
+  text-decoration: none; }
+  .sub-menu a:hover {
+    color: white; }
+
+.current-menu-parent li a {
+  background: inherit; }
+.current-menu-parent .current-menu-item a {
+  color: white;
+  font-weight: bold; }
+
+.mobile-buttons {
+  margin: -37px 9px 0;
+  float: right; }
+  .mobile-buttons a {
+    padding-left: 10px; }
+
+/******************
+ *JUMBOTRON STYLES
+ ******************** */
+.inspira-jumbotron {
+  background: url("images/jumbotron-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15% 0 25%; }
+  .inspira-jumbotron .title {
+    max-width: 525px;
+    margin: 20% auto; }
+  .inspira-jumbotron h1, .inspira-jumbotron h4 {
+    text-align: center;
+    font-weight: 700;
+    color: #fff; }
+  .inspira-jumbotron h1 {
+    font-size: 60px;
+    line-height: 30px;
+    font-style: italic; }
+  .inspira-jumbotron h4 {
+    font-size: 32px;
+    font-style: normal; }
+  .inspira-jumbotron p {
+    color: #fff;
+    text-align: center;
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    .inspira-jumbotron .title {
+      margin: 0; }
+    .inspira-jumbotron h1 {
+      line-height: 75px;
+      font-size: 120px; }
+    .inspira-jumbotron h4 {
+      line-height: 24px;
+      text-indent: 52px;
+      text-align: left;
+      font-size: 60px; }
+    .inspira-jumbotron p {
+      font-size: 32px; } }
+
+.product-banner {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 65px;
+  overflow: hidden;
+  background-color: #809ea8; }
+  .product-banner h5, .product-banner p, .product-banner a, .product-banner img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #4b4b4b; }
+  .product-banner h5 {
+    margin-bottom: 10px; }
+  .product-banner img {
+    margin-bottom: 15px; }
+  .product-banner .product-cards {
+    margin-top: 55px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.product-section {
+  background: #ddd;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .product-section .action-text {
+    margin-top: 5%; }
+  .product-section h5 {
+    font-weight: 300; }
+  .product-section img {
+    margin: 35px 0 20px;
+    display: block; }
+  .product-section ul {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none; }
+    .product-section ul li {
+      margin: 0;
+      padding: 0;
+      line-height: 40px; }
+      .product-section ul li:before {
+        content: '\00b7';
+        font-size: 48px;
+        vertical-align: top;
+        margin: 0;
+        padding: 0px 5px 0 0; }
+  .product-section.tablet-section {
+    background-image: url("images/tablet-bg.jpg"); }
+  .product-section.keep {
+    background-image: url("images/keep-bg.jpg");
+    text-align: center;
+    padding-bottom: 25%; }
+    .product-section.keep .button-container {
+      width: 398px;
+      margin: 0 auto; }
+    .product-section.keep .action-text {
+      max-width: 782px;
+      margin: 0 auto; }
+  .product-section.musicbox {
+    background-image: url("images/musicbox-bg.jpg");
+    padding-bottom: 20%; }
+  .product-section.astro-cam {
+    background-image: url("images/AstroCam.jpg");
+    padding-bottom: 0%; }
+    .product-section.astro-cam .floating-phone {
+      position: absolute;
+      display: block;
+      bottom: -65%;
+      width: 92%; }
+    .product-section.astro-cam .action-image img {
+      position: relative;
+      right: 70px; }
+  .product-section.astro-cam-360 {
+    background-image: url("images/Astro-Cam-360.jpg"); }
+    .product-section.astro-cam-360 .action-text {
+      margin-top: 140px; }
+  .product-section.astro-cam-hd {
+    background-image: url("images/Astro-Cam-HD.jpg"); }
+  .product-section.product-carousel {
+    background-image: url("images/camera-carousel.jpg");
+    padding: 0;
+    padding-top: 4%;
+    padding-bottom: 4%; }
+  .product-section.astroview-360-product {
+    background: white; }
+    .product-section.astroview-360-product .action-text h5 {
+      text-transform: none; }
+    .product-section.astroview-360-product .action-text .cost {
+      font-weight: 400;
+      font-size: 48px; }
+      .product-section.astroview-360-product .action-text .cost sup {
+        font-size: 24px; }
+    .product-section.astroview-360-product .action-image img {
+      margin-top: 80px; }
+    .product-section.astroview-360-product .product-image-thumbs {
+      clear: both;
+      margin-top: 135px; }
+      .product-section.astroview-360-product .product-image-thumbs ul {
+        list-style-type: none; }
+        .product-section.astroview-360-product .product-image-thumbs ul li {
+          float: left;
+          width: 70px;
+          height: 70px;
+          border: 1px solid #ccc;
+          margin-right: 30px;
+          text-align: center; }
+          .product-section.astroview-360-product .product-image-thumbs ul li:before {
+            content: '';
+            padding: 0;
+            margin: 0; }
+          .product-section.astroview-360-product .product-image-thumbs ul li:hover {
+            border: 1px solid #ff6c00;
+            cursor: pointer; }
+          .product-section.astroview-360-product .product-image-thumbs ul li:nth-child(3) img {
+            margin-top: 0; }
+          .product-section.astroview-360-product .product-image-thumbs ul li img {
+            margin-top: 5px; }
+          .product-section.astroview-360-product .product-image-thumbs ul li span, .product-section.astroview-360-product .product-image-thumbs ul li i {
+            display: block;
+            color: #ff6c00;
+            font-size: 18px; }
+          .product-section.astroview-360-product .product-image-thumbs ul li i {
+            margin-top: 15px; }
+          .product-section.astroview-360-product .product-image-thumbs ul li span {
+            line-height: 24px; }
+  .product-section.astroview-360-highlights {
+    background: #3d99b3;
+    color: white;
+    position: relative; }
+    .product-section.astroview-360-highlights h3 {
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 200; }
+    .product-section.astroview-360-highlights h6 {
+      text-transform: none;
+      font-weight: 400;
+      margin-top: 50px; }
+    .product-section.astroview-360-highlights p {
+      color: white; }
+    .product-section.astroview-360-highlights .action-image {
+      position: absolute;
+      right: -12%;
+      top: 125px; }
+      .product-section.astroview-360-highlights .action-image img {
+        width: 1026px;
+        height: 986px; }
+  .product-section.astroview-360-specs {
+    background: #61757c;
+    color: white;
+    position: relative; }
+    .product-section.astroview-360-specs h3 {
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 200; }
+    .product-section.astroview-360-specs table tr td {
+      font-size: 24px;
+      line-height: 42px; }
+      .product-section.astroview-360-specs table tr td:first-child {
+        padding-right: 40px; }
+      .product-section.astroview-360-specs table tr td:last-child {
+        font-weight: 200;
+        font-style: italic; }
+    .product-section.astroview-360-specs .action-image {
+      position: absolute;
+      left: -50px;
+      top: 20px; }
+
+/******************
+ *PRODUCT PAGE STYLES
+ ********************/
+.blue-banner {
+  background-color: #50829c;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .blue-banner .inner-width h5, .blue-banner .inner-width p {
+    color: #fff;
+    max-width: 795px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.divided-products {
+  background-image: url("images/Astro-Cam-Split.jpg");
+  background-size: contain;
+  padding-top: 3%;
+  padding-bottom: 0%; }
+  .divided-products.astroview-360-specs {
+    padding-top: 0;
+    margin-bottom: -14px;
+    background: #61757c;
+    border-top: 3px solid #fff; }
+    .divided-products.astroview-360-specs .col-md-6 {
+      padding-top: 30px; }
+    .divided-products.astroview-360-specs .col-md-6:first-child {
+      border-right: 3px solid #fff; }
+
+/******************
+ *FOOTER STYLES
+ *********************/
+footer {
+  padding: 60px 0 75px;
+  background: #afb4c0;
+  color: #444;
+  font-size: 18px;
+  font-weight: 300; }
+  footer .inspira-logo {
+    color: #444;
+    margin: 0 0 20px 0; }
+    footer .inspira-logo:hover {
+      color: #444; }
+  footer address, footer a {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: block; }
+  footer small {
+    font-size: 10px;
+    margin-top: 35px;
+    display: block; }
+
+.footer-nav {
+  padding: 0; }
+  .footer-nav li {
+    list-style: none;
+    display: block;
+    float: none;
+    margin-bottom: 10px; }
+    .footer-nav li:last-child {
+      margin-bottom: 0; }
+
+.footer-social-media a {
+  margin-bottom: 20px; }
+.footer-social-media i {
+  font-size: 29px; }
+
+/***************
+ *SIDEBAR STYLES
+ ***************** */
+.sidebar {
+  margin-top: 40px; }
+
+.widget {
+  margin: 10px 0 30px; }
+
+/***************
+ *SIDEBAR STYLES
+ ***************** */
+article.post {
+  margin: 20px 0 40px; }
+
+/***************
+ *PORTFOLIO STYLES
+ ***************** */
+.col-xs-3.portfolio-piece {
+  width: 100%; }
+
+.portfolio-piece h4 {
+  font-size: 0.8em; }
+
+.prev-next {
+  font-size: 1.25em;
+  margin-top: 30px;
+  text-align: right; }
+
+/***************
+ *FRONTPAGE STYLES
+ ***************** */
+.phone-number {
+  float: right; }
+
+.social-icons a {
+  padding-right: 10px; }
+  .social-icons a:last-child {
+    padding-right: 0; }
+
+/***************
+ *GALLERY STYLES
+ ***************** */
+#blueimp-gallery .modal-body.next img {
+  max-width: 85%;
+  margin: 15% auto;
+  height: auto; }
+
+#links img {
+  float: left;
+  width: 100%;
+  margin: 2% 0; }
+  @media (min-width: 425px) {
+    #links img {
+      max-width: 200px;
+      margin: 2%; } }
+
+/***************
+ *JUMBOTRON STYLES
+ ***************** */
+.jumbotron {
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+/***************
+ *SHORTCODE STYLES 
+ ***************** */
+#shortcode-ul {
+  padding: 0; }
+  #shortcode-ul li {
+    list-style-type: none;
+    padding-top: 5px; }
+  #shortcode-ul img {
+    float: left;
+    margin-right: 10px; }
+
+.list-posts {
+  margin: 25px 0; }
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+
+  .row-offcanvas-right {
+    right: 0; }
+
+  .row-offcanvas-left {
+    left: 0; }
+
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -50%; }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -50%; }
+
+  .row-offcanvas-right.active {
+    right: 50%; }
+
+  .row-offcanvas-left.active {
+    left: 50%; }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; } }
+.woocomm-setup {
+  width: 1200px;
+  margin: 0 auto; }
+
+@media screen and (min-width: 768px) {
+  .mobile-buttons {
+    display: none; } }
+@media screen and (min-width: 575px) {
+  .prev-next {
+    margin-top: 30px;
+    font-size: 1.5em; }
+
+  .social-icons {
+    float: right; } }
+@media screen and (min-width: 400px) {
+  .col-xs-3.portfolio-piece {
+    width: 25%; } }
+@media screen and (min-width: 300px) {
+  .mobile-buttons {
+    margin: 15px 10px 0; } }
+.nocomments {
+  display: none; }
+
+/* Gallery Styles */
+.case-study {
+  width: 100%;
+  display: inline-block;
+  margin: 1.5%;
+  background-color: rgba(255, 255, 255, 0.55);
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 325px;
+  border: 4px solid rgba(70, 70, 70, 0.1);
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.35);
+  min-height: 470px;
+  float: left; }
+  .case-study hr {
+    width: 95%;
+    margin: 10px auto 10px auto;
+    border: none;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.25); }
+  @media screen and (min-width: 600px) {
+    .case-study {
+      float: left;
+      width: 47%; } }
+  .case-study .pt-name {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 0px; }
+  .case-study .proc-name {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.3em;
+    margin: 0px;
+    margin-bottom: 15px; }
+  .case-study .pt-notes {
+    font-size: 14px; }
+  .case-study [data-gallery] img {
+    border: 2px solid #999999;
+    width: 100%;
+    height: auto;
+    max-width: 100% !important; }
+  .case-study label {
+    color: black;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; }
+  .case-study .full-face {
+    height: 286px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+    border: 2px solid #999999; }
+
+/* Blog Styles */
+@media screen and (min-width: 1024px) {
+  article.post {
+    height: 210px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.015); }
+    article.post:nth-of-type(even) {
+      background-color: rgba(0, 0, 0, 0.04); } }
+article.post .thumbnail-container {
+  background-color: #bfbfbf;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  padding-top: 10px; }
+  @media screen and (max-width: 1024px) {
+    article.post .thumbnail-container {
+      background: none; } }
+article.post .thumbnail {
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  max-height: 190px;
+  text-align: center;
+  border: none;
+  background: none;
+  margin: 0px auto !important;
+  padding: 0px;
+  border-radius: 0px;
+  border: 5px solid #cccccc; }
+  @media screen and (max-width: 1024px) {
+    article.post .thumbnail {
+      margin-top: 5px;
+      border: none; } }
+  article.post .thumbnail a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 190px;
+    height: 190px;
+    background-size: cover;
+    background-position: center center;
+    background-color: white;
+    text-decoration: none !important; }
+  article.post .thumbnail .date {
+    color: #454545;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    letter-spacing: -3px;
+    left: -4px;
+    position: relative;
+    bottom: -35px; }
+
+.thumbs {
+  width: 100%;
+  overflow-x: hidden; }
+  @media screen and (max-width: 768px) {
+    .thumbs .scroll-container {
+      transition: transform 0.3s ease-in-out;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out; } }
+  .thumbs .scroll-control {
+    height: 270px;
+    width: 45px;
+    z-index: 100000;
+    display: block;
+    position: absolute;
+    background-color: #222222;
+    box-shadow: 0px 0px 20px #222222;
+    text-align: center;
+    transition: all 0.2s ease-out; }
+    @media screen and (max-width: 1450px) {
+      .thumbs .scroll-control {
+        height: 220px; } }
+    @media screen and (max-width: 1250px) {
+      .thumbs .scroll-control {
+        height: 190px;
+        width: 35px; } }
+    @media screen and (max-width: 768px) {
+      .thumbs .scroll-control {
+        height: 110px; } }
+    .thumbs .scroll-control .fa {
+      position: relative;
+      bottom: -40%;
+      font-size: 36px;
+      color: white; }
+    .thumbs .scroll-control:hover {
+      width: 70px; }
+      @media screen and (max-width: 1250px) {
+        .thumbs .scroll-control:hover {
+          width: 58px; } }
+  .thumbs #scroll-left {
+    left: 0; }
+  .thumbs #scroll-right {
+    right: 0; }
+  .thumbs .thumb {
+    display: inline-block;
+    width: 480px;
+    margin: 0px;
+    height: 270px;
+    text-decoration: none !important;
+    float: left; }
+    @media screen and (max-width: 1450px) {
+      .thumbs .thumb {
+        width: 380px;
+        height: 220px; } }
+    @media screen and (max-width: 1250px) {
+      .thumbs .thumb {
+        width: 300px;
+        height: 190px; } }
+    @media screen and (max-width: 768px) {
+      .thumbs .thumb {
+        width: 180px;
+        height: 110px; } }
+    .thumbs .thumb .preview {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      text-align: center; }
+      .thumbs .thumb .preview .desc {
+        display: none; }
+      .thumbs .thumb .preview .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: relative;
+        margin-bottom: -340px;
+        z-index: 500;
+        opacity: 0;
+        transition: all 0.3s ease-in-out; }
+      .thumbs .thumb .preview p {
+        z-index: 1000;
+        position: relative;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin-top: 70px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out; }
+        @media screen and (max-width: 1450px) {
+          .thumbs .thumb .preview p {
+            margin-top: 115px; } }
+        @media screen and (max-width: 1250px) {
+          .thumbs .thumb .preview p {
+            margin-top: 145px; } }
+        @media screen and (max-width: 768px) {
+          .thumbs .thumb .preview p {
+            display: none; } }
+        .thumbs .thumb .preview p span {
+          display: block;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.75);
+          color: white;
+          font-weight: 900;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          position: relative; }
+        .thumbs .thumb .preview p .fa {
+          display: block;
+          width: 70px;
+          height: 70px;
+          border-radius: 100%;
+          margin: 20px auto;
+          border: 4px solid white;
+          padding: 18px;
+          padding-top: 10px;
+          opacity: 0;
+          transition: all 0.3s ease-in-out; }
+      .thumbs .thumb .preview:hover .overlay {
+        opacity: 0.75; }
+      .thumbs .thumb .preview:hover p .fa {
+        margin-top: 40px;
+        opacity: 1; }
+        @media screen and (max-width: 1450px) {
+          .thumbs .thumb .preview:hover p .fa {
+            margin-top: 55px; } }
+        @media screen and (max-width: 1250px) {
+          .thumbs .thumb .preview:hover p .fa {
+            margin-top: 35px; } }
+        @media screen and (max-width: 768px) {
+          .thumbs .thumb .preview:hover p .fa {
+            margin-top: -5px; } }
+
+#large-video {
+  width: 100%;
+  background-color: #090909;
+  margin-bottom: 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 50000; }
+  #large-video .video-share {
+    position: absolute;
+    z-index: 5000;
+    right: -20px; }
+    #large-video .video-share i {
+      display: none; }
+    @media screen and (max-width: 768px) {
+      #large-video .video-share i {
+        display: block;
+        color: white; }
+      #large-video .video-share img {
+        display: none; } }
+  #large-video #facebook-share {
+    top: 50px; }
+  #large-video #twitter-share {
+    top: 85px; }
+  @media screen and (max-width: 768px) {
+    #large-video .video-share {
+      top: 30px !important; }
+      #large-video .video-share#facebook-share {
+        left: 25px !important; }
+      #large-video .video-share#twitter-share {
+        left: 60px !important; } }
+  #large-video #target {
+    width: 58%;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5);
+    display: block;
+    transition: transform 0.45s ease-out, opacity 0.45s ease-out;
+    -webkit-transition: -webkit-transform 0.45s ease-out, opacity 0.45s ease-out;
+    position: relative;
+    left: 0px; }
+    #large-video #target.out {
+      transform: translateX(-1000px);
+      -webkit-transform: translateX(-1000px);
+      opacity: 0; }
+    #large-video #target.in {
+      transform: translateX(1000px);
+      -webkit-transform: translateX(1000px);
+      transition: none !important;
+      opacity: 0; }
+    #large-video #target #replacement {
+      width: 100%;
+      height: 100%; }
+    @media screen and (max-width: 768px) {
+      #large-video #target {
+        width: 100%; } }
+
+.video-description {
+  box-shadow: inset 0px 3px 14px rgba(0, 0, 0, 0.5);
+  background-color: #151515;
+  position: relative;
+  left: 0px; }
+  .video-description p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white; }
+  .video-description #desc_target {
+    transition: transform 0.45s ease-out, opacity 0.45s ease-out;
+    -webkit-transition: -webkit-transform 0.45s ease-out, opacity 0.45s ease-out; }
+    .video-description #desc_target.out {
+      transform: translateX(-1000px);
+      -webkit-transform: translateX(-1000px);
+      opacity: 0; }
+    .video-description #desc_target.in {
+      transform: translateX(1000px);
+      -webkit-transform: translateX(1000px);
+      transition: none !important;
+      opacity: 0; }
+
+.pop-up-box {
+  width: 20%;
+  position: fixed;
+  bottom: 0px;
+  right: 2%;
+  height: auto;
+  padding: 6px;
+  background: #f9f9f9;
+  border-left: 3px solid #333;
+  border-top: 3px solid #333;
+  border-right: 3px solid #333;
+  transform: translateY(400px);
+  transition: 1s ease-in-out; }
+  .pop-up-box.in {
+    transform: translateY(0px); }
+
+/*Carousel Styles*/
+.carousel h6 {
+  text-align: center;
+  color: #fff;
+  text-transform: none;
+  font-size: 24px; }
+.carousel i {
+  color: #fff; }
+.carousel .slick-slide img {
+  margin-bottom: -8%; }
+.carousel img, .carousel .slick-slide, .carousel a {
+  outline: 0;
+  margin: 0 auto; }
+  .carousel img h6, .carousel img a, .carousel .slick-slide h6, .carousel .slick-slide a, .carousel a h6, .carousel a a {
+    opacity: 0;
+    transition: 0.5s opacity ease-in; }
+  .carousel img.slick-center h6, .carousel img.slick-center a, .carousel img.slick-active h6, .carousel img.slick-active a, .carousel img.slick-current h6, .carousel img.slick-current a, .carousel .slick-slide.slick-center h6, .carousel .slick-slide.slick-center a, .carousel .slick-slide.slick-active h6, .carousel .slick-slide.slick-active a, .carousel .slick-slide.slick-current h6, .carousel .slick-slide.slick-current a, .carousel a.slick-center h6, .carousel a.slick-center a, .carousel a.slick-active h6, .carousel a.slick-active a, .carousel a.slick-current h6, .carousel a.slick-current a {
+    opacity: 1; }
+.carousel .slick-arrow {
+  transition: 0.15s all ease-in;
+  clear: both;
+  position: absolute;
+  z-index: 99999999;
+  top: 35%;
+  font-size: 120px; }
+  .carousel .slick-arrow.fa-angle-right {
+    right: 2%; }
+  .carousel .slick-arrow.fa-angle-left {
+    left: 2%; }
+  .carousel .slick-arrow:hover {
+    cursor: pointer;
+    color: #cc5600; }
+@media (min-width: 992px) {
+  .carousel .slick-arrow {
+    top: 50%; }
+    .carousel .slick-arrow.fa-angle-right {
+      right: 25%; }
+    .carousel .slick-arrow.fa-angle-left {
+      left: 25%; } }
