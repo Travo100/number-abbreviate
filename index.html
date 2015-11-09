@@ -15,148 +15,147 @@
 <body ng-app="app">
 <div ng-controller="testController as test">
   <div class="container">
-  <section class="row">
-    <div class="col-md-12">
-      <h3>Thousands</h3>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousand | numberAbbrev"></p>
-      <p ng-bind="test.tenthousand | numberAbbrev"></p>
-      <p ng-bind="test.hundredthousand | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousandtwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.tenthousandtwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredthousandtwentyfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousandfive | numberAbbrev"></p>
-      <p ng-bind="test.tenthousandfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredthousandfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousandsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.tenthousandsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.hundredthousandsevenfive| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousandeight| numberAbbrev"></p>
-      <p ng-bind="test.tenthousandeight| numberAbbrev"></p>
-      <p ng-bind="test.hundredthousandeight| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.thousandnine| numberAbbrev"></p>
-      <p ng-bind="test.tenthousandnine| numberAbbrev"></p>
-      <p ng-bind="test.hundredthousandnine| numberAbbrev"></p>
-    </div>
-  </section>
-  <section class="row">
-    <div class="col-md-12">
-      <h3>Millions</h3>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.million | numberAbbrev"></p>
-      <p ng-bind="test.tenmillion | numberAbbrev"></p>
-      <p ng-bind="test.hundredmillion | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.milliontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.tenmilliontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredmilliontwentyfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.millionfive | numberAbbrev"></p>
-      <p ng-bind="test.tenmillionfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredmillionfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.millionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.tenmillionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.hundredmillionsevenfive| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.millioneight| numberAbbrev"></p>
-      <p ng-bind="test.tenmillioneight| numberAbbrev"></p>
-      <p ng-bind="test.hundredmillioneight| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.millionnine| numberAbbrev"></p>
-      <p ng-bind="test.tenmillionnine| numberAbbrev"></p>
-      <p ng-bind="test.hundredmillionnine| numberAbbrev"></p>
-    </div>
-  </section>
-  <section class="row">
-    <div class="col-md-12">
-      <h3>Billions</h3>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billion | numberAbbrev"></p>
-      <p ng-bind="test.tenbillion | numberAbbrev"></p>
-      <p ng-bind="test.hundredbillion | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billiontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.tenbilliontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredbilliontwentyfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billionfive | numberAbbrev"></p>
-      <p ng-bind="test.tenbillionfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredbillionfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.tenbillionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.hundredbillionsevenfive| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billioneight| numberAbbrev"></p>
-      <p ng-bind="test.tenbillioneight| numberAbbrev"></p>
-      <p ng-bind="test.hundredbillioneight| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.billionnine| numberAbbrev"></p>
-      <p ng-bind="test.tenbillionnine| numberAbbrev"></p>
-      <p ng-bind="test.hundredbillionnine| numberAbbrev"></p>
-    </div>
-  </section>
-  <section class="row">
-    <div class="col-md-12">
-      <h3>Trillions</h3>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trillion | numberAbbrev"></p>
-      <p ng-bind="test.tentrillion | numberAbbrev"></p>
-      <p ng-bind="test.hundredtrillion | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trilliontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.tentrilliontwentyfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredtrilliontwentyfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trillionfive | numberAbbrev"></p>
-      <p ng-bind="test.tentrillionfive | numberAbbrev"></p>
-      <p ng-bind="test.hundredtrillionfive | numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trillionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.tentrillionsevenfive| numberAbbrev"></p>
-      <p ng-bind="test.hundredtrillionsevenfive| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trillioneight| numberAbbrev"></p>
-      <p ng-bind="test.tentrillioneight| numberAbbrev"></p>
-      <p ng-bind="test.hundredtrillioneight| numberAbbrev"></p>
-    </div>
-    <div class="col-md-2">
-      <p ng-bind="test.trillionnine| numberAbbrev"></p>
-      <p ng-bind="test.tentrillionnine| numberAbbrev"></p>
-      <p ng-bind="test.hundredtrillionnine| numberAbbrev"></p>
-    </div>
-  </section>
-
-</div>
+    <section class="row">
+      <div class="col-md-12">
+        <h3>Thousands</h3>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousand | numberAbbreviate"></p>
+        <p ng-bind="test.tenthousand | numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousand | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousandtwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenthousandtwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousandtwentyfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousandfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenthousandfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousandfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousandsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.tenthousandsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousandsevenfive| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousandeight| numberAbbreviate"></p>
+        <p ng-bind="test.tenthousandeight| numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousandeight| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.thousandnine| numberAbbreviate"></p>
+        <p ng-bind="test.tenthousandnine| numberAbbreviate"></p>
+        <p ng-bind="test.hundredthousandnine| numberAbbreviate"></p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-md-12">
+        <h3>Millions</h3>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.million | numberAbbreviate"></p>
+        <p ng-bind="test.tenmillion | numberAbbreviate"></p>
+        <p ng-bind="test.hundredmillion | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.milliontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenmilliontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredmilliontwentyfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.millionfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenmillionfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredmillionfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.millionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.tenmillionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.hundredmillionsevenfive| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.millioneight| numberAbbreviate"></p>
+        <p ng-bind="test.tenmillioneight| numberAbbreviate"></p>
+        <p ng-bind="test.hundredmillioneight| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.millionnine| numberAbbreviate"></p>
+        <p ng-bind="test.tenmillionnine| numberAbbreviate"></p>
+        <p ng-bind="test.hundredmillionnine| numberAbbreviate"></p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-md-12">
+        <h3>Billions</h3>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billion | numberAbbreviate"></p>
+        <p ng-bind="test.tenbillion | numberAbbreviate"></p>
+        <p ng-bind="test.hundredbillion | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billiontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenbilliontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredbilliontwentyfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billionfive | numberAbbreviate"></p>
+        <p ng-bind="test.tenbillionfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredbillionfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.tenbillionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.hundredbillionsevenfive| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billioneight| numberAbbreviate"></p>
+        <p ng-bind="test.tenbillioneight| numberAbbreviate"></p>
+        <p ng-bind="test.hundredbillioneight| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.billionnine| numberAbbreviate"></p>
+        <p ng-bind="test.tenbillionnine| numberAbbreviate"></p>
+        <p ng-bind="test.hundredbillionnine| numberAbbreviate"></p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-md-12">
+        <h3>Trillions</h3>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trillion | numberAbbreviate"></p>
+        <p ng-bind="test.tentrillion | numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrillion | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trilliontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.tentrilliontwentyfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrilliontwentyfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trillionfive | numberAbbreviate"></p>
+        <p ng-bind="test.tentrillionfive | numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrillionfive | numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trillionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.tentrillionsevenfive| numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrillionsevenfive| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trillioneight| numberAbbreviate"></p>
+        <p ng-bind="test.tentrillioneight| numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrillioneight| numberAbbreviate"></p>
+      </div>
+      <div class="col-md-2">
+        <p ng-bind="test.trillionnine| numberAbbreviate"></p>
+        <p ng-bind="test.tentrillionnine| numberAbbreviate"></p>
+        <p ng-bind="test.hundredtrillionnine| numberAbbreviate"></p>
+      </div>
+    </section>
+  </div>
 </div>
 <!-- scripts -->
 <script src="libs/angular.min.js"></script>
