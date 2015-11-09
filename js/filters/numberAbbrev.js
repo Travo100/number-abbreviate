@@ -37,7 +37,11 @@ angular
           }
           if ( /*(num > Math.pow(10, 5) && num < Math.pow(10, 6)) || */ num > Math.pow(10, 8) && num < Math.pow(10, 9) ) {
             var y = num/Math.pow(10, i - 3);
-          }          
+          }   
+          if (num >= 9999000 && num < Math.pow(10, 7)) {
+            var y = num/Math.pow(10, i);
+            letter = 'B';
+          }       
           var x = y.toString();
           if (x.toString().charAt(1) === ".") {
             return Number(x).toFixed(2) + letter;
