@@ -2,3 +2,4 @@
 node_modules
 tmp
 ~$D Application.docx
+.DS_Store
