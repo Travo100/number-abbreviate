@@ -5,7 +5,7 @@ angular
     var letter;
     var numDivided = 0;
     var numFormed = 0;
-    var numToString = "";
+    var numToString = '';
     return function(num) {
     
     // give the number the correct designator, based on its original value and up 100th trillion
