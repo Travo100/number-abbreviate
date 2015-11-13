@@ -9,11 +9,15 @@ describe('Filters', function(){ //describe your object type
         }));
         
         //Less then 10,000
-        for (var i = -1; i < 9999; i++) {
-          it('Should take the number ' + i + ' and give back ' + i, function(){  //write test
-            expect(numberAbbreviate(i)).toBe(i.toString()); //pass
-          }); 
-        }
+        // for (var i = -1; i < 9999; i++) {
+        //   it('Should take the number ' + i + ' and give back ' + i, function(){  //write test
+        //     expect(numberAbbreviate(i)).toBe(i.toString()); //pass
+        //   }); 
+        // }
+
+        it('Should take the number 0 and not give back 1', function(){  //write test
+          expect(numberAbbreviate(0)).not.toBe('1'); //pass
+        });
         
         // 10,000 to 1,000,000 test
         it('Should take the number 10,000.9999 and give back 10K', function(){  //write test
