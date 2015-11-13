@@ -23,7 +23,7 @@
             vm.hundredthousandeight = 180000;
             vm.thousandnine = 9999;
             vm.tenthousandnine = 99999;
-            vm.hundredthousandnine = 999999;
+            vm.hundredthousandnine = 999501;
 
             vm.million = 1000000;
             vm.tenmillion = 10000000;
@@ -41,7 +41,7 @@
             vm.tenmillioneight = 18000000;
             vm.hundredmillioneight = 180000000;
             vm.millionnine = 9999000;
-            vm.tenmillionnine = 99999999;
+            vm.tenmillionnine = 99996000;
             vm.hundredmillionnine = 999999999;
 
             vm.billion = 1000000000;
