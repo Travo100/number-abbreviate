@@ -9,13 +9,13 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     plumber = require('gulp-plumber');
 
-gulp.task('sass', function() {
-    return sass('sass/') 
-    .on('error', function (err) {
-      console.error('Error!', err.message);
-   })
-    .pipe(gulp.dest('css/'));
-});
+// gulp.task('sass', function() {
+//     return sass('sass/') 
+//     .on('error', function (err) {
+//       console.error('Error!', err.message);
+//    })
+//     .pipe(gulp.dest('css/'));
+// });
 
 gulp.task('css', function() {
   return gulp.src('css/main.css')
@@ -63,4 +63,4 @@ gulp.task('watch', function(){
   gulp.watch('css/*.css', ['css']);
 });
 
-gulp.task('default', ['js', 'sass', 'webserver', 'watch', 'css']);
+gulp.task('default', ['js', 'webserver', 'watch', 'css']);
