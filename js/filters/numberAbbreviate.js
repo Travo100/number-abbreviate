@@ -44,12 +44,12 @@ angular
         // this tackle an issue to when numbers were approarching the
         // next nTH place, and not round up properly. 
         // Ex: 999.999M becomes 1B
-
         if (num >= 99999 && num < Math.pow(10, 5)) {
           numFormed = num/Math.pow(10, i - 2);
           letter = 'K';
           return numFormed.toFixed(0) + letter;
         }
+   
         if (num >= 999500 && num < Math.pow(10, 6)) {
           numFormed = num/Math.pow(10, i );
           letter = 'M';
