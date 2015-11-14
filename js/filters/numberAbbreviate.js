@@ -47,95 +47,29 @@
             numDivided = num / Math.pow(10, i - 3);
           }
 
-          // thousands rounding up to millions
-          // this tackle an issue to when numbers were approarching the
+          // this tackles an issue to when numbers were approarching the
           // next nTH place, and not round up properly. 
           // Ex: 999.999M becomes 1B
-          if (num >= 99999 && num < Math.pow(10, 5)) {
-            numFormed = num/Math.pow(10, i - 2);
-            letter = 'K';
-            return numFormed.toFixed(0) + letter;
-          }
-          
-          // working on making this more concise with a loop
-          for (var j = 2; j < 16; j++) {
-            if (num >= 9995 * Math.pow(10, j) && num < Math.pow(10, i)) {
-              if (num >= 9995000 && num < Math.pow(10, 7) || num >= 9995000000 && num < Math.pow(10, 10) || num >= 9995000000000 && num < Math.pow(10, 13)){
-                numFormed = num/Math.pow(10, i - 1);
-              } else if (num >= 99950000 && num < Math.pow(10, 8) || num >= 99950000000 && num < Math.pow(10, 11) || num >= 999500000000 && num < Math.pow(10, 12)) {
-                numFormed = num/Math.pow(10, i - 2);
-              } else {
-                numFormed = num/Math.pow(10, i);
-              }
-              
-              if (num >= 999500 && num < Math.pow(10, 8)) {
-                letter = 'M';
-              } else if (num >= 999500000 && num < Math.pow(10, 12))  {
-                letter = 'B';
-              } else if (num >= 999500000000 && num < Math.pow(10, 14)) {
-                letter = 'T';
-              } else {
-                letter = 'Q';
-              }
-              return numFormed.toFixed(0) + letter;
+          if (num >= 9995 * Math.pow(10, i - 4) && num < Math.pow(10, i)) {
+            if (num >= 9995000 && num < Math.pow(10, 7) || num >= 9995000000 && num < Math.pow(10, 10) || num >= 9995000000000 && num < Math.pow(10, 13)){
+              numFormed = num/Math.pow(10, i - 1);
+            } else if (num >= 99999 && num < Math.pow(10, 5) || num >= 99950000 && num < Math.pow(10, 8) || num >= 99950000000 && num < Math.pow(10, 11) || num >= 99950000000000 && num < Math.pow(10, 14)) {
+              numFormed = num/Math.pow(10, i - 2);
+            } else {
+              numFormed = num/Math.pow(10, i);
             }
-          }
-          
-          if (num >= 999500 && num < Math.pow(10, 6)) {
-            numFormed = num/Math.pow(10, i);
-            letter = 'M';
-            return numFormed.toFixed(0) + letter;
-          } 
-          
-
-          // million rounding up to billions
-          if (num >= 9995000 && num < Math.pow(10, 7)) {
-            numFormed = num / Math.pow(10, i - 1);
-            letter = 'M';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 99950000 && num < Math.pow(10, 8)) {
-            numFormed = num / Math.pow(10, i - 2);
-            letter = 'M';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 999500000 && num < Math.pow(10, 9)) {
-            numFormed = num / Math.pow(10, i);
-            letter = 'B';
-            return numFormed.toFixed(0) + letter;
-          }
-
-          // billions rounding up to trillions
-          if (num >= 9995000000 && num < Math.pow(10, 10)) {
-            numFormed = num / Math.pow(10, i - 1);
-            letter = 'B';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 99950000000 && num < Math.pow(10, 11)) {
-            numFormed = num / Math.pow(10, i - 2);
-            letter = 'B';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 999500000000 && num < Math.pow(10, 12)) {
-            numFormed = num / Math.pow(10, i);
-            letter = 'T';
-            return numFormed.toFixed(0) + letter;
-          }
-
-          // trillions rounding up to quadrillions
-          if (num >= 9995000000000 && num < Math.pow(10, 13)) {
-            numFormed = num / Math.pow(10, i - 1);
-            letter = 'T';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 99950000000000 && num < Math.pow(10, 14)) {
-            numFormed = num / Math.pow(10, i - 2);
-            letter = 'T';
-            return numFormed.toFixed(0) + letter;
-          }
-          if (num >= 999500000000000 && num < Math.pow(10, 15)) {
-            numFormed = num / Math.pow(10, i);
-            letter = 'Q';
+            
+            if (num >= 99999 && num < Math.pow(10, 5)) {
+              letter = 'K';
+            } else if (num >= 999500 && num < Math.pow(10, 8)) {
+              letter = 'M';
+            } else if (num >= 999500000 && num < Math.pow(10, 11))  {
+              letter = 'B';
+            } else if (num >= 999500000000 && num < Math.pow(10, 14)) {
+              letter = 'T';
+            } else {
+              letter = 'Q';
+            }
             return numFormed.toFixed(0) + letter;
           }
 

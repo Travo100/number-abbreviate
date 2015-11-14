@@ -78,7 +78,7 @@
             vm.trillioneight = 1800000000000;
             vm.tentrillioneight = 18000000000000;
             vm.hundredtrillioneight = 180000000000000;
-            vm.trillionnine = 9999999000000;
+            vm.trillionnine = 999500000000;
             vm.tentrillionnine = 99999999999000;
             vm.hundredtrillionnine = 999999999999000;
         }
